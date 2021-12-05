@@ -114,7 +114,7 @@ func hasBoardWon(bingoBoard [][]BingoNumber) bool {
 
 	markedNumberCount := 0
 
-	// check vertical lines
+	// check horizontal lines
 	for i := range bingoBoard {
 		for j := range bingoBoard[i] {
 			if bingoBoard[i][j].isMarked {
@@ -127,7 +127,7 @@ func hasBoardWon(bingoBoard [][]BingoNumber) bool {
 		markedNumberCount = 0
 	}
 
-	// check horizontal lines
+	// check vertical lines
 	for i := range bingoBoard {
 		for j := range bingoBoard[i] {
 			if bingoBoard[j][i].isMarked {
